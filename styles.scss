@@ -1,2 +1,35 @@
-$font-stack:    'Helvetica Neue', Helvetica, sans-serif;
-$primary: #222;
+$font-stack: 'HKGroteskRegular', 'Helvetica Neue', Helvetica, sans-serif;
+$primary: #000;
+$background: #fff;
+$light: #f0f0f0;
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: $font-stack;
+  color: $primary;
+  background: $background;
+}
+
+#date {
+  font-size: 2rem;
+  font-family: 'HKGroteskLight';
+  letter-spacing: -1px;
+  padding: 2% 0;
+  border-bottom: 2px solid $light;
+}
+
+#time {
+  font-size: 240px;
+  font-size: 20vw;
+  font-family: 'HKGroteskBold';
+  letter-spacing: -4px;
+  font-weight: bold;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}

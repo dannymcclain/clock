@@ -1,11 +1,14 @@
 function showDate() {
   var today = new Date();
-  var day = today.getDate();
+  var day = today.getDay();
+  var day_names = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+  day = day_names[day];
+  var date = today.getDate();
   var month = today.getMonth();
   var month_names = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
   var month = month_names[month];
   var year = today.getFullYear();
-  document.getElementById('date').innerHTML = day + " " + month + " " + year;
+  document.getElementById('date').innerHTML = day + " | " + date + " " + month + " " + year;
 }
 
 function addZero(i) {
