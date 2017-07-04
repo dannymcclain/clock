@@ -1,0 +1,3 @@
+# Ignore working folder #
+/_untracked/*
+.DS_Store
