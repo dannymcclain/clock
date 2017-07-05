@@ -2,6 +2,12 @@ $font-stack: 'HKGroteskRegular', 'Helvetica Neue', Helvetica, sans-serif;
 $primary: #000;
 $background: #fff;
 $light: #f0f0f0;
+@mixin fontbig {
+    font-size: 240px;
+    font-size: 24vw;
+}
+$fontregular: 2em;
+$fontsmall: 1em;
 
 html {
   font-size: 100%;
@@ -12,18 +18,20 @@ body {
   color: $primary;
   background: $background;
 }
-
+#day {
+  font-size: $fontsmall;
+  font-family: 'HKGroteskBold';
+}
 #date {
-  font-size: 2rem;
+  font-size: $fontregular;
   font-family: 'HKGroteskLight';
   letter-spacing: -1px;
-  padding: 2% 0;
+  padding-bottom: 2%;
   border-bottom: 2px solid $light;
 }
 
 #time {
-  font-size: 240px;
-  font-size: 20vw;
+  @include fontbig;
   font-family: 'HKGroteskBold';
   letter-spacing: -4px;
   font-weight: bold;
@@ -31,5 +39,6 @@ body {
 
 .container {
   width: 90%;
+  padding: 2% 0;
   margin: 0 auto;
 }

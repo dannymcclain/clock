@@ -8,7 +8,8 @@ function showDate() {
   var month_names = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
   var month = month_names[month];
   var year = today.getFullYear();
-  document.getElementById('date').innerHTML = day + " | " + date + " " + month + " " + year;
+    document.getElementById('day').innerHTML = day;
+  document.getElementById('date').innerHTML = date + " " + month + " " + year;
 }
 
 function addZero(i) {
@@ -25,16 +26,14 @@ function showTime() {
      hour = hour-12;
     }
     var minutes = now.getMinutes();
-    var seconds = now.getSeconds();
 
     // add a zero in front of numbers<10
     hour = addZero(hour);
     minutes = addZero(minutes);
-    seconds = addZero(seconds);
-    document.getElementById('time').innerHTML = hour + ":" + minutes + ":" + seconds;
+    document.getElementById('time').innerHTML = hour + ":" + minutes;
     t = setTimeout(function () {
         showTime()
-    }, 500);
+    }, 1000);
 }
 showDate();
 showTime();
