@@ -8,8 +8,7 @@ function showDate() {
   var month_names = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
   var month = month_names[month];
   var year = today.getFullYear();
-    document.getElementById('day').innerHTML = day;
-  document.getElementById('date').innerHTML = date + " " + month + " " + year;
+  document.getElementById('date').innerHTML =  day + " – " + date + " " + month + " " + year;
 }
 
 function addZero(i) {
