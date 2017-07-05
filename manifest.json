@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
 
-  "name": "Minimal Clock",
-  "description": "A minimal new tab for Chrome",
+  "name": "Clock",
+  "description": "A minimal new tab for Chrome that displays the day, date, and time.",
   "version": "1.0",
 
   "browser_action": {
