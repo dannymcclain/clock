@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+
+  "name": "Minimal Clock",
+  "description": "A minimal new tab for Chrome",
+  "version": "1.0",
+
+  "browser_action": {
+  },
+  "chrome_url_overrides" : {
+    "newtab": "index.html"
+  },
+  "author": "Danny McClain (dannymcclain.com)"
+}

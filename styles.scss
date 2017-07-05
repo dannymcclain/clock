@@ -4,7 +4,7 @@ $background: #fff;
 $light: #f0f0f0;
 @mixin fontbig {
     font-size: 240px;
-    font-size: 24vw;
+    font-size: 28vw;
 }
 $fontregular: 2em;
 $fontsmall: 1em;
@@ -19,15 +19,18 @@ body {
   background: $background;
 }
 #day {
-  font-size: $fontsmall;
+  font-size: 36px;
   font-family: 'HKGroteskBold';
+  letter-spacing: -0.75px;
+  margin-bottom: 10px;
 }
 #date {
-  font-size: $fontregular;
-  font-family: 'HKGroteskLight';
-  letter-spacing: -1px;
+  font-size: 24px;
+  font-family: 'HKGroteskRegular';
+  letter-spacing: -0.5px;
   padding-bottom: 2%;
-  border-bottom: 2px solid $light;
+  color: #b3b3b3;
+  // border-bottom: 2px solid $light;
 }
 
 #time {
