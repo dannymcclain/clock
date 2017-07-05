@@ -1,4 +1,4 @@
-$font-stack: 'HKGroteskRegular', 'Helvetica Neue', Helvetica, sans-serif;
+$font-stack: 'HKGroteskLight', 'Helvetica Neue', Helvetica, sans-serif;
 $primary: #000;
 $background: #fff;
 $light: #f0f0f0;
@@ -6,9 +6,12 @@ $light: #f0f0f0;
     font-size: 240px;
     font-size: 20vw;
 }
-$fontregular: 2em;
+$fontregular: 16px;
 $fontsmall: 1em;
-
+* {
+  margin: 0;
+  padding: 0;
+}
 html {
   font-size: 100%;
 }
@@ -18,19 +21,29 @@ body {
   color: $primary;
   background: $background;
 }
+header {
+  background: #f7f7f7;
+  color: #aaa;
+  padding: 20px 20px 12px;
+  margin: 0;
+}
+
+.cf:after {
+    content:"";
+    display:table;
+    clear:both;
+}
+
 #day {
-  font-size: 36px;
-  font-family: 'HKGroteskBold';
-  letter-spacing: -0.75px;
+  font-size: $fontregular;
+  letter-spacing: -0.5px;
   margin-bottom: 10px;
+  float: left;
 }
 #date {
-  font-size: 24px;
-  font-family: 'HKGroteskRegular';
+  font-size: $fontregular;
   letter-spacing: -0.5px;
-  padding-bottom: 2%;
-  color: #b3b3b3;
-  // border-bottom: 2px solid $light;
+  float: right;
 }
 
 #time {
@@ -38,6 +51,7 @@ body {
   font-family: 'HKGroteskBold';
   letter-spacing: -4px;
   font-weight: bold;
+  text-align: center;
 }
 
 .container {
