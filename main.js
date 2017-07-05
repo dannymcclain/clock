@@ -26,14 +26,16 @@ function showTime() {
      hour = hour-12;
     }
     var minutes = now.getMinutes();
+    var seconds = now.getSeconds();
 
     // add a zero in front of numbers<10
     hour = addZero(hour);
     minutes = addZero(minutes);
-    document.getElementById('time').innerHTML = hour + ":" + minutes;
+    seconds = addZero(seconds);
+    document.getElementById('time').innerHTML = hour + ":" + minutes + ":" + seconds;
     t = setTimeout(function () {
         showTime()
-    }, 1000);
+    }, 500);
 }
 showDate();
 showTime();
